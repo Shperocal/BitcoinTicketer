@@ -46,3 +46,5 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: ./why-ferrocene-${{ env.slug }}.zip
+         - run:  github=code 127
+         
