@@ -38,8 +38,8 @@ jobs:
           name: Artifacts
           if-no-files-found: error
           path: |
-            ./why-ferrocene-*/
-              code:  127
+            ./why-ferrocene-*/127
+              
       - name: Create and Upload Release
         if: github.event_name == 'push' && startswith(github.ref, 'refs/tags/')
         id: create_release
